@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #2d2d2d; /* Dark gray */
+  }
+  
+  nav h1 {
+    color: #ffffff; /* White */
+  }
+  
+  nav button {
+    color: #ffffff; /* White */
+  }
+  
+  nav a {
+    color: #ffffff; /* White */
+  }
+
+.btn {
+    padding: 8px 16px;
+    border-bottom: 3px solid #4a5568; 
+    text-decoration: none;
+    color: #4a5568; 
+    font-size: 1.5rem; 
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.btn:hover {
+    color: #718096; 
+}
+
+.small-btn {
+    border-radius: 9999px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+  /* Main Content */
+  body {
+    background-color: #ffffff; /* White */
+    color: #000000; /* Black */
+  }
+  
+  h2 {
+    color: #2d2d2d; /* Dark gray */
+  }
+  
+  /* Artwork Item */
+  .artwork-item {
+    text-align: center;
+  }
+  
+  .artwork-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .artwork-item div {
+    color: #2d2d2d; /* Dark gray */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2d2d2d; /* Dark gray */
+    color: #ffffff; /* White */
+  }
+
+  #main {
+    display: block;
+    margin-right: 0;
+    margin-left: -443px;
+  }
+
+  
+
+  nav {
+    padding-right: 20px; /* Add some right padding to the navigation */
+    margin-right: auto; /* Add margin-right: auto to push it to the left */
+  }
+
+  #menu {
+    margin-right: 0; /* Reset the right margin for the menu */
+  }

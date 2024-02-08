@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frame of Fame</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body class="text-gray-600 font-body">
+  <div class="grid md:grid-cols-3">
+    <div class="md:col-span-1 md:flex md:justify-end">
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+            <a href="/" class="hover:text-gray-700 tracking-widest">Frame of Fame</a>
+          </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="burger">
+            <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </div>
+        </div>
+
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
+          <li class="text-gray-700 font-bold py-1">
+            <a href="#" class=".block px-4 flex justify-end border-r-4 border-primary">
+              <span>Home</span>
+              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class=".block px-4 flex justify-end border-r-4 border-white">
+              <span>About</span>
+              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="py-1">
+            <a href="#" class=".block px-4 flex justify-end border-r-4 border-white">
+              <span>Contact</span>
+              <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="px-16 py-6 md:col-span-2 bg-gray-100" id="main">
+      <div class="flex justify-center md:justify-end">
+        <a href="#" class="small-btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+        <a href="#" class="small-btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+        <a href="#" class="small-btn flex items-center space-x-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">
+          <span>Cart</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h10.72a2 2 0 002-1.61L23 6H6" />
+              <circle cx="8" cy="21" r="2" />
+              <circle cx="18" cy="21" r="2" />
+          </svg>
+      </a>
+      <form action="/search" method="GET" class="flex items-center space-x-2"> <!-- Added form element -->
+        <input type="text" name="query" placeholder="Search" class="p-1 border rounded">
+        <a href="#" class="small-btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Search</a>
+      </form>
+      </div>
+
+      <header class="container mx-auto mt-4 flex space-x-4">
+        <a href="#" class="btn">Paintings</a>
+        <a href="#" class="btn">Photography</a>
+        <a href="#" class="btn">Drawings</a>
+        <a href="#" class="btn">Sculpture</a>
+      </header>
+
+    <!-- Navigation Bar 
+    <nav class="bg-gray-800 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">Frame of Fame</h1>
+            <div class="flex items-center space-x-4">
+                <button class="text-white">Login</button>
+                <button class="text-white">Register</button>
+                <input type="text" placeholder="Search" class="p-2 border rounded">
+                <button class="bg-gray-600 text-white p-2 rounded">Cart</button>
+            </div>
+          
+        </div>-->
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8">
+      <!-- Best of 2024 -->
+      <section class="mb-8">
+          <h2 class="font-bold pb-2 mt-12 border-b border-gray-200 text-3xl">The Best of 2024</h2>
+          <div class="mt-8 flex flex-wrap justify-left gap-10">
+              <!-- ... (existing artwork code) -->
+              <!-- Artwork 1 -->
+              <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/The Best of 2024/pool 17.jpeg" alt="Pool 17" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600 mt-2">
+
+                      <p>Pool 17</p>
+                      <p>Paintings, 100 W x 70 H x 2.5 D cm</p>
+                      <p>Karina Antonczak</p>
+                  </div>
+              </div>
+  
+              <!-- Artwork 2 -->
+              <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/The Best of 2024/3 of Wands.jpg" alt="3 of Wands" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>3 of Wands Photograph - Limited Edition of 25</p>
+                      <p>Photography, Color on Paper, 76.2 W x 101 H x 0.1 D cm</p>
+                      <p>Simon Bolton</p>
+                  </div>
+              </div>
+              <!-- Artwork 3 -->
+              <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/The Best of 2024/August 15.jpg" alt="Sharing one thought" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>August 15 Sculpture</p>
+                      <p>Sculpture, Tufted on Wool,70 W x 100 H x 3 D cm</p>
+                      <p>Timo Myllymäki</p>
+                  </div>
+              </div>
+              <!-- Artwork 4 -->
+              <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/The Best of 2024/10263573-MIFDERNS-7.jpg" alt="Sharing one thought" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>Linger. Stainless steel sculpture Sculpture - Limited Edition of 3</p>
+                      <p>Sculpture, Steel on Stainless Steel,  26 W x 27 H x 21 D cm</p>
+                      <p>Yoni Alter</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- Recently Added -->
+      <section class="mb-8">
+          <h2 class="font-bold pb-2 mt-12 border-b border-gray-200 text-3xl">Recently Added</h2>
+            <div class="mt-8 flex flex-wrap justify-left gap-10">
+                <!-- ... (existing or new artwork code) -->
+                <!-- Artwork 1 -->
+                <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/Recently Added/Complexities of Color Print.jpg" alt="Complexities of Color Print" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>Complexities of Color Print</p>
+                      <p>Fine Art Paper, 25.4 x 25.4 cm</p>
+                      <p>Otha Davis III</p>
+                  </div>
+                </div>
+                <!-- Artwork 2 -->
+                <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/Recently Added/Landmark Print.jpg" alt="Complexities of Color Print" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>Landmark Print</p>
+                      <p>Printmaking, Monotype on ink,36.8 W x 50.8 H x 0.3 D cm</p>
+                      <p>Anna Wingfield/p>
+                  </div>
+                </div>
+                <!-- Artwork 3 -->
+                <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/Recently Added/Soap Bubble Studies.jpg" alt="Complexities of Color Print" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>Soap Bubble Studies</p>
+                      <p>Photography, Color on Paper, 90 W x 60 H x 1 D cm</p>
+                      <p>Marlies Plank</p>
+                  </div>
+                </div>  
+
+                <!-- Artwork 4 -->
+                <div class="card hover:shadow-lg w-64 h-64 flex flex-col items-center mr-4">
+                  <img src="img/Recently Added/space of the winds Sculpture.jpg" alt="Complexities of Color Print" class="w-full h-48 object-cover">
+                  <div class="text-sm text-gray-600">
+                      <p>space of the winds Sculpture</p>
+                      <p>Sculpture, Metal on Steel,22 W x 26 H x 22 D cm</p>
+                      <p>Nikolaus Weiler</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover a New Artist -->
+        <section class="mb-8">
+            <h2 class="font-bold pb-2 mt-12 border-b border-gray-200 text-3xl">Discover a New Artits</h2>
+            <div class="mt-8 flex flex-wrap justify-left gap-10">
+                <!-- ... (existing or new artwork code) -->
+                <!-- Artwork 1 -->
+                <div class="mr-4">
+                  <div class="card hover:shadow-lg w-40 h-40 flex flex-col items-center">
+                    <img src="img/Discover a New Artit/Alejandra Valdivia.jpg" alt="Alejandra Valdivia" class="rounded-full">
+                    <div class="text-sm text-gray-600 mt-2">
+                        <p>Alejandra Valdivia</p>
+                    </div>
+                  </div>
+              </div>
+                <!-- Artwork 2 -->
+                <div class="mr-4">
+                  <div class="card hover:shadow-lg w-40 h-40 flex flex-col items-center">
+                    <img src="img/Discover a New Artit/Nikolaus Weiler.jpg" alt="Nikolaus Weiler" class="rounded-full ">
+                    <div class="text-sm text-gray-600 mt-2">
+                        <p>Nikolaus Weiler</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Artwork 3 -->
+                <div class="mr-4">
+                  <div class="card hover:shadow-lg w-40 h-40 flex flex-col items-center">
+                    <img src="img/Discover a New Artit/Oluwafemi Akanmu.jpg" alt="Oluwafemi Akanmu" class="rounded-full ">
+                    <div class="text-sm text-gray-600 mt-2">
+                        <p>Oluwafemi Akanmu</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Artwork 4 -->
+                <div class="mr-4">
+                  <div class="card hover:shadow-lg w-40 h-40 flex flex-col items-center">
+                    <img src="img/Discover a New Artit/Yannie Gu.jpg" alt="Yannie Gu" class="rounded-full">
+                    <div class="text-sm text-gray-600 mt-2">
+                        <p>Yannie Gu</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-black-700 p-4 text-white">
+          <div class="container mx-auto text-center">
+            <p>&copy; 2024 Frame of Fame. All rights reserved.</p>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
