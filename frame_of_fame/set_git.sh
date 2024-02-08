@@ -11,7 +11,7 @@
 # git init
 
 git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/EdenBar01/Frame-of-Fame.git
-git push -u origin main
+git commit -m "commit"
+git branch -M noa
+git remote add origin https://github.com/pazfayer/A13.git
+git push -u origin noa
