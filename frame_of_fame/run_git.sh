@@ -13,4 +13,4 @@ formattedDate=$(date +"%d-%m-%y")
 git status
 git add .
 git commit -m "$formattedDate"
-git push -u origin main
+git push -u origin paz
