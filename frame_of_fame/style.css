@@ -11,7 +11,7 @@
   
   /* Navigation Bar */
   nav {
-    background-color: #2d2d2d; /* Dark gray */
+    background-color: rgb(56, 21, 111); /* Dark gray */
   }
   
   nav h1 {
@@ -28,7 +28,7 @@
 
 .btn {
     padding: 8px 16px;
-    border-bottom: 3px solid #4a5568; 
+    border-bottom: 3px solid rgb(56, 21, 111); 
     text-decoration: none;
     color: #4a5568; 
     font-size: 1.5rem; 
@@ -80,7 +80,7 @@
   
   /* Footer */
   footer {
-    background-color: #2d2d2d; /* Dark gray */
+    background-color:  rgb(56, 21, 111); /* Dark gray */
     color: #ffffff; /* White */
   }
 
