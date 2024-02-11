@@ -141,7 +141,7 @@ footer {
 #main {
   display: block;
   margin-right: 0;
-  margin-left: -443px;
+  margin-left: -700px;
 }
 
 
@@ -166,4 +166,10 @@ nav {
 .price-hover:hover span {
   text-decoration: underline;
   /* Apply underline on hover */
+}
+
+@media (min-width: 768px) {
+  .md\:flex {
+      display: flex;
+  }
 }
