@@ -12,6 +12,6 @@
 
 git add .
 git commit -m "commit"
-git branch -M noa
+git branch -M noy
 git remote add origin https://github.com/pazfayer/A13.git
-git push -u origin noa
+git push -u origin noy

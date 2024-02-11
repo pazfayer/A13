@@ -4,54 +4,58 @@
 
 /* Custom styles */
 .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  /* Navigation Bar */
-  nav {
-    background-color: rgb(56, 21, 111); /* Dark gray */
-  }
-  
-  nav h1 {
-    color: #ffffff; /* White */
-  }
-  
-  nav button {
-    color: #ffffff; /* White */
-  }
-  
-  nav a {
-    color: #ffffff; /* White */
-  }
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgb(56, 21, 111);
+  /* Dark gray */
+}
+
+nav h1 {
+  color: #ffffff;
+  /* White */
+}
+
+nav button {
+  color: #ffffff;
+  /* White */
+}
+
+nav a {
+  color: #ffffff;
+  /* White */
+}
 
 .btn {
-    padding: 8px 16px;
-    border-bottom: 3px solid rgb(56, 21, 111); 
-    text-decoration: none;
-    color: #4a5568; 
-    font-size: 1.5rem; 
-    font-weight: 600;
-    transition: color 0.3s;
+  padding: 8px 16px;
+  border-bottom: 3px solid rgb(56, 21, 111);
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 .btn:hover {
-  color: #718096; 
+  color: #718096;
 }
 
 .small-btn {
-    border-radius: 15px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    margin: 5px;
+  border-radius: 15px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin: 5px;
 }
 .small-btn:hover {
   /* Change border color on hover */
@@ -59,55 +63,107 @@
 }
 
 #search:focus {
-  border-color: rgb(56, 21, 111); /* Change the border color */
-  outline: none; /* Remove the default focus outline */
-  box-shadow: 0 0 5px rgb(56, 21, 111); /* Add a box shadow */
+  border-color: rgb(56, 21, 111);
+  /* Change the border color */
+  outline: none;
+  /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgb(56, 21, 111);
+  /* Add a box shadow */
 }
 
-  /* Main Content */
-  body {
-    background-color: #ffffff; /* White */
-    color: #000000; /* Black */
-  }
-  
-  h2 {
-    color: #2d2d2d; /* Dark gray */
-  }
-  
-  /* Artwork Item */
-  .artwork-item {
-    text-align: center;
-  }
-  
-  .artwork-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .artwork-item div {
-    color: #2d2d2d; /* Dark gray */
-  }
-  
-  /* Footer */
-  footer {
-    background-color:  rgb(56, 21, 111); /* Dark gray */
-    color: #ffffff; /* White */
-  }
+/* Main Content */
+body {
+  background-color: #ffffff;
+  /* White */
+  color: #000000;
+  /* Black */
+}
 
-  #main {
-    display: block;
-    margin-right: 0;
-    margin-left: -443px;
-  }
+h2 {
+  color: #2d2d2d;
+  /* Dark gray */
+}
 
-  
+/* Artwork Item */
+.artwork-item {
+  text-align: center;
+}
 
-  nav {
-    padding-right: 20px; /* Add some right padding to the navigation */
-    margin-right: auto; /* Add margin-right: auto to push it to the left */
-  }
+.artwork-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
 
-  #menu {
-    margin-right: 0; /* Reset the right margin for the menu */
-  }
+.artwork-item div {
+  color: #2d2d2d;
+  /* Dark gray */
+}
+
+/*photos boxes*/
+.card { 
+  width: 300px; /* Set a fixed width for consistency */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left; /* Align text to the left */
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the image */
+  object-fit: cover;
+}
+
+.card .text-sm {
+  width: 100%; /* Ensure the text fills the width of the card */
+  padding: 0 10px; /* Add padding to text for spacing */
+}
+
+.artist {
+  transition: transform 0.3s ease;
+}
+
+.artist:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Footer */
+footer {
+  background-color: rgb(56, 21, 111);
+  /* Dark gray */
+  color: #ffffff;
+  /* White */
+}
+
+#main {
+  display: block;
+  margin-right: 0;
+  margin-left: -443px;
+}
+
+
+
+nav {
+  padding-right: 20px;
+  /* Add some right padding to the navigation */
+  margin-right: auto;
+  /* Add margin-right: auto to push it to the left */
+}
+
+#menu {
+  margin-right: 0;
+  /* Reset the right margin for the menu */
+}
+
+.price-hover span {
+  text-decoration: none;
+  /* Remove underline by default */
+}
+
+.price-hover:hover span {
+  text-decoration: underline;
+  /* Apply underline on hover */
+}
