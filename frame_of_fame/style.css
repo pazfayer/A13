@@ -5,7 +5,6 @@
 /* Custom styles */
 .container {
   max-width: 100%;
-  
   margin-right: auto;
   margin-left: auto;
 }
@@ -58,7 +57,6 @@ nav a {
   cursor: pointer;
   margin: 5px;
 }
-
 .small-btn:hover {
   /* Change border color on hover */
   border-color: rgb(56, 21, 111);
