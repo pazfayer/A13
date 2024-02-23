@@ -1,0 +1,62 @@
+
+#app {
+  position: relative;
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  right:0;
+  left: 300px;
+  padding:20px;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  z-index: 100;
+  padding:20px;
+  box-shadow: inset 0px 0px rgba(0,0,0,0.1);
+  overflow: auto;
+  background-color: rgb(56, 21, 111);
+  color: white; /* Change text color to white */
+}
+.row{
+  margin-bottom:20px;
+}
+
+/* CSS rule for TitleSidebarBlock */
+.title-block a {
+  text-decoration: none;
+}
+.title-block a:hover {
+  text-decoration: none;
+}
+
+
+.btn {
+  text-decoration: none;
+  padding: auto;
+  color: #4a5568;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s;
+  border: none;
+  background: none;
+}
+
+.btn:hover {
+  color: #718096;
+  text-decoration: none;
+}
+
+.btn-purple {
+  border-bottom: 3px solid rgb(56, 21, 111); /* Purple bottom border */
+}
+
+.btn:focus {
+  outline: none;
+}
