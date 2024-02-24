@@ -13,6 +13,7 @@ if ($content && $sidebar) { // Check if elements are found
     // Inserting HTML content into elements
     $sidebar.insertAdjacentHTML("beforeend", sidebarHtml);
     $content.insertAdjacentHTML("beforeend", contentHtml);
+    
     // Add an event listener to each button to toggle the underline effect
     document.querySelectorAll('.btn').forEach(button => {
         button.addEventListener('click', () => {
